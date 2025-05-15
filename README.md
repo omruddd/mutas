@@ -1,2 +1,0 @@
-# mutas
-Cek mutasi fake
