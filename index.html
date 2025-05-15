@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Mutasi Rekening - KlikBCA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+    }
+    .container {
+      width: 800px;
+      margin: 30px auto;
+      background: white;
+      border: 1px solid #ccc;
+    }
+    .header {
+      background: #003399;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    .nav {
+      background: #dbe8ff;
+      padding: 10px;
+      width: 200px;
+      float: left;
+    }
+    .content {
+      margin-left: 200px;
+      padding: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 5px;
+      font-size: 12px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+      padding: 10px;
+      background: #eee;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h2>KlikBCA - INDIVIDUAL</h2>
+  </div>
+
+  <div class="nav">
+    <h4>Informasi Rekening</h4>
+    <ul>
+      <li>Informasi Saldo</li>
+      <li>Mutasi Rekening</li>
+      <li>Deposito</li>
+      <li>Tahapan Berjangka</li>
+      <li>Informasi Saldo RDN</li>
+      <li>Mutasi RDN</li>
+    </ul>
+    <br>
+    <a href="#">Kembali ke Menu Utama</a>
+  </div>
+
+  <div class="content">
+    <table>
+      <thead>
+        <tr>
+          <th>Tanggal</th>
+          <th>Keterangan</th>
+          <th>Nomor Ref</th>
+          <th>Debit</th>
+          <th>Kredit</th>
+          <th>Saldo</th>
+        </tr>
+      </thead>
+      <tbody id="mutasiBody">
+        <!-- Data Dinamis Diisi oleh JS/PHP -->
+        <tr>
+          <td>05/08</td>
+          <td>HARY PRASTOWO PURN</td>
+          <td>0000</td>
+          <td></td>
+          <td>000.00 CR</td>
+          <td>382.50</td>
+        </tr>
+        <tr>
+          <td>05/08</td>
+          <td>SWITCHING CR</td>
+          <td>0000</td>
+          <td>000.00 DB</td>
+          <td></td>
+          <td>382.50</td>
+        </tr>
+        <tr>
+          <td>07/08</td>
+          <td>TRANSFER DR: 008 NANAUNG DWI</td>
+          <td>0998</td>
+          <td>000.00 DB</td>
+          <td></td>
+          <td>382.50</td>
+        </tr>
+        <tr>
+          <td>12/08</td>
+          <td>TRSF E-BANKING CR TAUFIQ IQBAL</td>
+          <td>1308/FTSCY/WS95011</td>
+          <td></td>
+          <td>000.00 CR</td>
+          <td>382.50</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <tr><td>Saldo Awal</td><td>:</td><td>412.50</td></tr>
+      <tr><td>Mutasi Kredit</td><td>:</td><td>000.00</td></tr>
+      <tr><td>Mutasi Debit</td><td>:</td><td>030.00</td></tr>
+      <tr><td>Saldo Akhir</td><td>:</td><td>382.50</td></tr>
+    </table>
+  </div>
+
+  <div class="footer">
+    Copyright © 2000 BCA. All Rights Reserved
+  </div>
+</div>
+
+</body>
+</html>
